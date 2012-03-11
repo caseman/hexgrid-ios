@@ -41,6 +41,9 @@
     return 2. * r;
 }
 
+// Point conversion algorithms derived from:
+// http://playtechs.blogspot.com/2007/04/hex-grids.html
+
 - (CGPoint)pointCart2Hex:(CGPoint)cartPt
 {
     CGPoint hexPt;
