@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9D0880A15083530005147D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0880915083530005147D4 /* Cocoa.framework */; };
+		C9D0881415083530005147D4 /* hexgrid.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D0881315083530005147D4 /* hexgrid.m */; };
+		C9D0881C15083531005147D4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0881B15083530005147D4 /* SenTestingKit.framework */; };
+		C9D0881D15083531005147D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0880915083530005147D4 /* Cocoa.framework */; };
+		C9D0882015083531005147D4 /* hexgrid.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D0880615083530005147D4 /* hexgrid.dylib */; };
+		C9D0882615083531005147D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9D0882415083531005147D4 /* InfoPlist.strings */; };
+		C9D0882915083531005147D4 /* hexgridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D0882815083531005147D4 /* hexgridTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9D0881E15083531005147D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9D087FD1508352F005147D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9D0880515083530005147D4;
+			remoteInfo = hexgrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9D0880615083530005147D4 /* hexgrid.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = hexgrid.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D0880915083530005147D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9D0880C15083530005147D4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9D0880D15083530005147D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9D0880E15083530005147D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9D0881115083530005147D4 /* hexgrid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hexgrid-Prefix.pch"; sourceTree = "<group>"; };
+		C9D0881215083530005147D4 /* hexgrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hexgrid.h; sourceTree = "<group>"; };
+		C9D0881315083530005147D4 /* hexgrid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hexgrid.m; sourceTree = "<group>"; };
+		C9D0881A15083530005147D4 /* hexgridTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hexgridTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D0881B15083530005147D4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C9D0882315083531005147D4 /* hexgridTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hexgridTests-Info.plist"; sourceTree = "<group>"; };
+		C9D0882515083531005147D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9D0882715083531005147D4 /* hexgridTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hexgridTests.h; sourceTree = "<group>"; };
+		C9D0882815083531005147D4 /* hexgridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hexgridTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9D0880315083530005147D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D0880A15083530005147D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D0881615083530005147D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D0881C15083531005147D4 /* SenTestingKit.framework in Frameworks */,
+				C9D0881D15083531005147D4 /* Cocoa.framework in Frameworks */,
+				C9D0882015083531005147D4 /* hexgrid.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9D087FB1508352F005147D4 = {
+			isa = PBXGroup;
+			children = (
+				C9D0880F15083530005147D4 /* hexgrid */,
+				C9D0882115083531005147D4 /* hexgridTests */,
+				C9D0880815083530005147D4 /* Frameworks */,
+				C9D0880715083530005147D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9D0880715083530005147D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0880615083530005147D4 /* hexgrid.dylib */,
+				C9D0881A15083530005147D4 /* hexgridTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9D0880815083530005147D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0880915083530005147D4 /* Cocoa.framework */,
+				C9D0881B15083530005147D4 /* SenTestingKit.framework */,
+				C9D0880B15083530005147D4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9D0880B15083530005147D4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0880C15083530005147D4 /* AppKit.framework */,
+				C9D0880D15083530005147D4 /* CoreData.framework */,
+				C9D0880E15083530005147D4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9D0880F15083530005147D4 /* hexgrid */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0881215083530005147D4 /* hexgrid.h */,
+				C9D0881315083530005147D4 /* hexgrid.m */,
+				C9D0881015083530005147D4 /* Supporting Files */,
+			);
+			path = hexgrid;
+			sourceTree = "<group>";
+		};
+		C9D0881015083530005147D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0881115083530005147D4 /* hexgrid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9D0882115083531005147D4 /* hexgridTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0882715083531005147D4 /* hexgridTests.h */,
+				C9D0882815083531005147D4 /* hexgridTests.m */,
+				C9D0882215083531005147D4 /* Supporting Files */,
+			);
+			path = hexgridTests;
+			sourceTree = "<group>";
+		};
+		C9D0882215083531005147D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9D0882315083531005147D4 /* hexgridTests-Info.plist */,
+				C9D0882415083531005147D4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9D0880415083530005147D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9D0880515083530005147D4 /* hexgrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D0882C15083531005147D4 /* Build configuration list for PBXNativeTarget "hexgrid" */;
+			buildPhases = (
+				C9D0880215083530005147D4 /* Sources */,
+				C9D0880315083530005147D4 /* Frameworks */,
+				C9D0880415083530005147D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hexgrid;
+			productName = hexgrid;
+			productReference = C9D0880615083530005147D4 /* hexgrid.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C9D0881915083530005147D4 /* hexgridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D0882F15083531005147D4 /* Build configuration list for PBXNativeTarget "hexgridTests" */;
+			buildPhases = (
+				C9D0881515083530005147D4 /* Sources */,
+				C9D0881615083530005147D4 /* Frameworks */,
+				C9D0881715083530005147D4 /* Resources */,
+				C9D0881815083530005147D4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9D0881F15083531005147D4 /* PBXTargetDependency */,
+			);
+			name = hexgridTests;
+			productName = hexgridTests;
+			productReference = C9D0881A15083530005147D4 /* hexgridTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9D087FD1508352F005147D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C9D088001508352F005147D4 /* Build configuration list for PBXProject "hexgrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9D087FB1508352F005147D4;
+			productRefGroup = C9D0880715083530005147D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9D0880515083530005147D4 /* hexgrid */,
+				C9D0881915083530005147D4 /* hexgridTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9D0881715083530005147D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D0882615083531005147D4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9D0881815083530005147D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9D0880215083530005147D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D0881415083530005147D4 /* hexgrid.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D0881515083530005147D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D0882915083531005147D4 /* hexgridTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9D0881F15083531005147D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9D0880515083530005147D4 /* hexgrid */;
+			targetProxy = C9D0881E15083531005147D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9D0882415083531005147D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9D0882515083531005147D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9D0882A15083531005147D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9D0882B15083531005147D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9D0882D15083531005147D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hexgrid/hexgrid-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		C9D0882E15083531005147D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hexgrid/hexgrid-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		C9D0883015083531005147D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hexgrid/hexgrid-Prefix.pch";
+				INFOPLIST_FILE = "hexgridTests/hexgridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C9D0883115083531005147D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "hexgrid/hexgrid-Prefix.pch";
+				INFOPLIST_FILE = "hexgridTests/hexgridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9D088001508352F005147D4 /* Build configuration list for PBXProject "hexgrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D0882A15083531005147D4 /* Debug */,
+				C9D0882B15083531005147D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9D0882C15083531005147D4 /* Build configuration list for PBXNativeTarget "hexgrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D0882D15083531005147D4 /* Debug */,
+				C9D0882E15083531005147D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9D0882F15083531005147D4 /* Build configuration list for PBXNativeTarget "hexgridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D0883015083531005147D4 /* Debug */,
+				C9D0883115083531005147D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9D087FD1508352F005147D4 /* Project object */;
+}
