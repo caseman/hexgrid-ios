@@ -69,4 +69,15 @@
     return cartPt;
 }
 
+- (void)hexVerts:(CGPoint)hexPt intoArray:(HGHexPoints)pts
+{
+    CGPoint center = [self pointHex2Cart:hexPt];
+    pts[0].x = center.x; pts[0].y = center.y + s;
+    pts[1].x = center.x + r; pts[1].y = center.y + .5 * s;
+    pts[2].x = center.x + r; pts[2].y = center.y - .5 * s;
+    pts[3].x = center.x; pts[3].y = center.y - s;
+    pts[4].x = center.x - r; pts[4].y = center.y - .5 * s;
+    pts[5].x = center.x - r; pts[5].y = center.y + .5 * s;
+}
+
 @end

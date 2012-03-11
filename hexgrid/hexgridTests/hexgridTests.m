@@ -109,11 +109,52 @@
     hp.x = 0; hp.y = 2;
     cp = [grid pointHex2Cart:hp];
     STAssertEquals(cp.x, (CGFloat)1, @"expected x=1");
-    STAssertEqualsWithAccuracy(cp.y, (CGFloat)(3 / sqrt(3)), .00001f, @"expected y=0");
+    STAssertEqualsWithAccuracy(cp.y, (CGFloat)(3 / sqrt(3)), .00001f, nil);
     
     hp.x = 20; hp.y = -4;
     cp = [grid pointHex2Cart:hp];
-    STAssertEquals(cp.x, (CGFloat)18, @"expected x=1");
-    STAssertEqualsWithAccuracy(cp.y, (CGFloat)(-6 / sqrt(3)), .00001f, @"expected y=0");
+    STAssertEquals(cp.x, (CGFloat)18, @"expected x=18");
+    STAssertEqualsWithAccuracy(cp.y, (CGFloat)(-6 / sqrt(3)), .00001f, nil);
+    
+    [grid release];
+}
+
+- (void)testHexVertsIntoArray
+{
+    HGHexPoints v;
+    HexGrid* grid = [[HexGrid alloc] init];
+    CGPoint hp;
+    CGFloat r = 1. / sqrt(3);
+    
+    hp.x = 0; hp.y = 0;
+    [grid hexVerts:hp intoArray:v];
+    STAssertEquals(v[0].x, (CGFloat)0, nil);
+    STAssertEqualsWithAccuracy(v[0].y, (CGFloat)r, .00001f, nil);
+    STAssertEquals(v[1].x, (CGFloat).5, nil);
+    STAssertEqualsWithAccuracy(v[1].y, (CGFloat)r * .5, .00001f, nil);
+    STAssertEquals(v[2].x, (CGFloat).5, nil);
+    STAssertEqualsWithAccuracy(v[2].y, (CGFloat)-r * .5, .00001f, nil);
+    STAssertEquals(v[3].x, (CGFloat)0, nil);
+    STAssertEqualsWithAccuracy(v[3].y, (CGFloat)-r, .00001f, nil);
+    STAssertEquals(v[4].x, (CGFloat)-.5, nil);
+    STAssertEqualsWithAccuracy(v[4].y, (CGFloat)-r * .5, .00001f, nil);
+    STAssertEquals(v[5].x, (CGFloat)-.5, nil);
+    STAssertEqualsWithAccuracy(v[5].y, (CGFloat)r * .5, .00001f, nil);
+    
+    CGFloat cy = -6 / sqrt(3);
+    hp.x = 20; hp.y = -4;
+    [grid hexVerts:hp intoArray:v];
+    STAssertEquals(v[0].x, (CGFloat)18, nil);
+    STAssertEqualsWithAccuracy(v[0].y, (CGFloat)r + cy, .00001f, nil);
+    STAssertEquals(v[1].x, (CGFloat)18.5, nil);
+    STAssertEqualsWithAccuracy(v[1].y, (CGFloat)r * .5 + cy, .00001f, nil);
+    STAssertEquals(v[2].x, (CGFloat)18.5, nil);
+    STAssertEqualsWithAccuracy(v[2].y, (CGFloat)-r * .5 + cy, .00001f, nil);
+    STAssertEquals(v[3].x, (CGFloat)18, nil);
+    STAssertEqualsWithAccuracy(v[3].y, (CGFloat)-r + cy, .00001f, nil);
+    STAssertEquals(v[4].x, (CGFloat)17.5, nil);
+    STAssertEqualsWithAccuracy(v[4].y, (CGFloat)-r * .5 + cy, .00001f, nil);
+    STAssertEquals(v[5].x, (CGFloat)17.5, nil);
+    STAssertEqualsWithAccuracy(v[5].y, (CGFloat)r * .5 + cy, .00001f, nil);
 }
 @end
